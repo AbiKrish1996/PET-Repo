@@ -1,0 +1,52 @@
+Send Request
+POST http://localhost:3000/register
+Content-Type : application/json
+{
+    "id" : 1,
+    "type" : "expense" ,
+    "category" : "Food",
+    "amount" : 200,
+    "date" : "2-10-2024",
+    "description" : "Groceries"
+}
+
+Send Request
+GET http://localhost:3000/transactions
+
+Send Request
+GET http://localhost:3000/transactions/2
+
+Send Request
+PUT http://localhost:3000/transactions/4/
+Content-Type : application/json
+
+{
+  "type": "income"
+}
+
+Send Request
+PUT http://localhost:3000/transactions/3/
+Content-Type : application/json
+
+{
+  "amount": 1234
+}
+
+Send Request
+PUT http://localhost:3000/transactions/1/
+Content-Type : application/json
+
+{
+  "category": "home"
+}
+
+Send Request
+PUT http://localhost:3000/transactions/1/
+Content-Type : application/json
+
+{
+  "date": "20-10-2024"
+}
+
+Send Request
+DELETE http://localhost:3000/transactions/3/
